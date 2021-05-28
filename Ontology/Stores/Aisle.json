@@ -1,0 +1,41 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Aisle;1",
+  "@type": "Interface",
+  "displayName": "Aisle",
+  "description": "An aisle that is in a store",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "aisleName",
+      "displayName": "Aisle Name",
+      "description": "Name of an aisle. E.g. Aisle 6",
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "areaCoordinates",
+      "description": "X-Y-Z coodinate of the area location",
+      "schema": "dtmi:digitaltwins:retail:SpaceCoordinates;1"
+    },
+    {
+      "@type": "Property",
+      "name": "aisleLength",
+      "displayName": "Aisle Length",
+      "description": "Length of aisle measured in meters",
+      "schema": "double"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Defines the relationship where this store is located in a display area.",
+      "target": "dtmi:digitaltwins:retail:AreaDisplay;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "containis",
+      "description": "Defines the relationship where aisle has endcap",
+      "target": "dtmi:digitaltwins:retail:endcap;1"
+    }
+  ]
+}

@@ -12,18 +12,10 @@
       "schema": "string"
     },
     {
-      "@type": "Property",
-      "name": "xCoordinate",
-      "displayName": "X Coordinate",
-      "description": "X coodinate of the area location",
-      "schema": "integer"
-    },
-    {
-      "@type": "Property",
-      "name": "yCoordinate",
-      "displayName": "Y Coordinate",
-      "description": "X coodinate of the area location",
-      "schema": "integer"
+      "@type": "Component",
+      "name": "areaCoordinates",
+      "description": "X-Y-Z coodinate of the area location",
+      "schema": "dtmi:digitaltwins:retail:SpaceCoordinates;1"
     },
     {
       "@type": "Component",

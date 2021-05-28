@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Product;1",
+  "@type": "Interface",
+  "displayName": "Product",
+  "description": "Product description",
+  "comment": "Subset of IDW Product",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "productName",
+      "displayName": "Product Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "productDescription",
+      "displayName": "Product Description",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "productInternalName",
+      "displayName": "Product Internal Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "introductionDate",
+      "displayName": "Introduction Date",
+      "description": "Date that product was introduced",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "plannedAbandonmentDate",
+      "displayName": "Planned Abandonment Date",
+      "description": "Date that product is planned to be discontinued",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "globalTradeItemNumber",
+      "displayName": "Global Trade Item Number",
+      "description": "Global Trade Item Number (GTIN) part of GS1 standards",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "universalProductCode",
+      "displayName": "Universal Product Code",
+      "description": "UPC is part of the barcode",
+      "schema": "float"
+    }
+  ]
+}

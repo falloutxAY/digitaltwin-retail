@@ -1,0 +1,23 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:ProductQuantity;1",
+  "extends":"dtmi:digitaltwins:retail:Product;1",
+  "@type": "Interface",
+  "displayName": "Product Quantity",
+  "description": "Product Quantity in an space",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "quantity",
+      "displayName": "Product quantity",
+      "description": "Product quantity in a section",
+      "schema": "integer"
+    },
+    {
+      "@type": "Relationship",
+      "name": "locatedIn",
+      "description": "Defines the relationship where this endcap is located in a display area.",
+      "comment": "Keeping it generic."
+    }
+  ]
+}

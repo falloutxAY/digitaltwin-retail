@@ -41,7 +41,8 @@
     {
       "@type": "Relationship",
       "name": "locatedIn",
-      "description": "Defines the relationship where this store is located in."
+      "description": "Defines the relationship where this store is located in a geographic region.",
+      "comment": "Can set a target on an abstracted geographical interface"
     },
     {
       "@type": "Relationship",

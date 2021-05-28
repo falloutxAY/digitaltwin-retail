@@ -1,0 +1,31 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:SpaceCoordinates;1",
+  "@type": "Interface",
+  "displayName": "Space Coordinates",
+  "description": "X-Y-Z coodinates",
+  "comment": "Do not have to fill up all. Especially Z coordinates",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "xCoordinate",
+      "displayName": "X Coordinate",
+      "description": "X coodinate of the area location",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "yCoordinate",
+      "displayName": "Y Coordinate",
+      "description": "Y coodinate of the area location",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "zCoordinate",
+      "displayName": "Z Coordinate",
+      "description": "Z coodinate of the area location",
+      "schema": "integer"
+    }
+  ]
+}

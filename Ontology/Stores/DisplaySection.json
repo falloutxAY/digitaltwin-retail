@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:DisplaySection;1",
+  "@type": "Interface",
+  "displayName": "Display Section",
+  "description": "Aisle is divided in rows and section",
+  "comment": "Roxs are divided into sections",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "sectionName",
+      "displayName": "Section Name",
+      "description": "E.g. Row 2 of isle 6, section 1",
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "areaCoordinates",
+      "description": "X-Y-Z coodinate of the area location",
+      "schema": "dtmi:digitaltwins:retail:SpaceCoordinates;1"
+    },
+    {
+      "@type": "Property",
+      "name": "sectionLength",
+      "description": "length of the section",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "row",
+      "description": "Row Number",
+      "schema": "integer"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Defines the relationship where this section is in",
+      "comment": "Section can be part of aisle, endcap etc. !! Maybe better to abstract aisle, endcap and create a direct relationship"
+    },
+    {
+      "@type": "Relationship",
+      "name": "locatedIn",
+      "description": "Defines the relationship where this endcap is located in a display area.",
+      "comment": "Keeping it generic."
+    },
+    {
+      "@type": "Relationship",
+      "name": "containsProducts",
+      "description": "Defines the products in this section",
+      "target": "dtmi:digitaltwins:retail:ProductQuantity;1"
+    }
+  ]
+}

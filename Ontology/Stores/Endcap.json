@@ -1,0 +1,34 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Endcap;1",
+  "@type": "Interface",
+  "displayName": "Endcap",
+  "description": "Endcap of an aisle",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "endcapName",
+      "displayName": "Endcap Name",
+      "description": "Name of endcap. E.g. Endcap of Aisle 6",
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "areaCoordinates",
+      "description": "X-Y-Z coodinate of the area location",
+      "schema": "dtmi:digitaltwins:retail:SpaceCoordinates;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Defines the relationship where this store is located in an aisle.",
+      "target": "dtmi:digitaltwins:retail:Aisle;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "locatedIn",
+      "description": "Defines the relationship where this endcap is located in a display area.",
+      "comment": "Keeping it generic."
+    }
+  ]
+}
