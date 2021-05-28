@@ -1,0 +1,24 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:VideoCamera;1",
+  "@type": "Interface",
+  "displayName": "Video Camera",
+  "extends": "dtmi:digitaltwins:rec_3_3:core:Asset;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "resolution",
+      "displayName": "Resolution",
+      "description": "Resolution of camera",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "typeOfCamera",
+      "displayName": "Type of Camera",
+      "description": "Type of camera. E.g. Dome, Wall mount etc",
+      "schema": "string",
+      "comment": "!! Better with enum?"
+    }
+  ]
+}

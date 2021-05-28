@@ -1,0 +1,7 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Gateway;1",
+  "@type": "Interface",
+  "displayName": "Gateway",
+  "extends": "dtmi:digitaltwins:rec_3_3:core:Asset;1"
+}

@@ -20,6 +20,12 @@
       "target": "dtmi:digitaltwins:rec_3_3:core:LogicalDevice;1"
     },
     {
+      "@type": "Relationship",
+      "description": "Indicates that a given Asset hosts a logical device; e.g., a Raspberry Pi hosts a Home Assistant installation, or an IoT-connect smart camera unit hosts an IoT Edge runtime. Inverse of: hostedBy",
+      "name": "locatedIn",
+      "target": "dtmi:digitaltwins:retail:Area;1"
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "name"

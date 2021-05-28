@@ -1,0 +1,15 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:DigitalSignage;1",
+  "@type": "Interface",
+  "displayName": "Digital Signage",
+  "extends": "dtmi:digitaltwins:rec_3_3:core:Asset;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "screenSize",
+      "displayName": "Screen Size",
+      "schema": "string"
+    }
+  ]
+}
