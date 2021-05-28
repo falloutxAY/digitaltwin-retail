@@ -1,0 +1,8 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:AreaCheckout;1",
+  "extends":"dtmi:digitaltwins:retail:Area;1",
+  "@type": "Interface",
+  "displayName": "Checkout Area",
+  "description": "Checkout/cashier area"
+}

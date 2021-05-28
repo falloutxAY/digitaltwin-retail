@@ -1,0 +1,20 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:City;1",
+  "@type": "Interface",
+  "displayName": "City",
+  "description": "City based on the address",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "cityName",
+      "displayName": "City",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Defines the relationship of the city being part of a space"
+    }
+  ]
+}

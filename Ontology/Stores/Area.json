@@ -1,0 +1,42 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Area;1",
+  "@type": "Interface",
+  "displayName": "Area",
+  "description": "Areas are sections of a site.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "areaName",
+      "displayName": "Area Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "xCoordinate",
+      "displayName": "X Coordinate",
+      "description": "X coodinate of the area location",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "yCoordinate",
+      "displayName": "Y Coordinate",
+      "description": "X coodinate of the area location",
+      "schema": "integer"
+    },
+    {
+      "@type": "Component",
+      "name": "totalAreaSpace",
+      "displayName": "Total area floor space",
+      "description": "Toal area space in sq meters",
+      "schema": "dtmi:digitaltwins:retail:SpaceArea;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Defines the relationship where the area is part of a space",
+      "target": "dtmi:digitaltwins:retail:Floor;1"
+    }
+  ]
+}

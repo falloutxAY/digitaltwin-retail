@@ -1,0 +1,41 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Floor;1",
+  "@type": "Interface",
+  "displayName": "Floor",
+  "description": "The level of a building, a.k.a. storey, floor, level etc.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "floorNumber",
+      "displayName": "Floor Number",
+      "description": "A number indicating the ordinal number of this level within the building. Note that the implementation of this numbering scheme and its starting point is implementation-specific; e.g., the fifth floor below ground may be 0 in some systems, and -5 in others",
+      "schema": "integer"
+    },
+    {
+      "@type": "Component",
+      "name": "grossFloorArea",
+      "displayName": "Total Floor Area",
+      "description": "Total floor area in sq meters",
+      "schema": "dtmi:digitaltwins:retail:SpaceArea;1"
+    },
+    {
+      "@type": "Component",
+      "name": "maxOccupancyOfFloor",
+      "displayName": "Maximum Occupancy of floor",
+      "schema": "dtmi:digitaltwins:retail:SpaceCapacity;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Defines the relationship of the floor in the store",
+      "target": "dtmi:digitaltwins:retail:Store;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "description": "Defines the areas which are located in the floor",
+      "target": "dtmi:digitaltwins:retail:Area;1"
+    }
+  ]
+}

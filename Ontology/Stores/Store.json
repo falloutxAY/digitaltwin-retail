@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Store;1",
+  "@type": "Interface",
+  "displayName": "Store",
+  "description": "IDW - Store",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "storeName",
+      "displayName": "Store Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "locationDetails",
+      "displayName": "Location Details",
+      "description": "Address details",
+      "schema": "dtmi:digitaltwins:retail:Address;1"
+    },
+    {
+      "@type": "Component",
+      "name": "grossFloorArea",
+      "displayName": "Total Floor Area of store",
+      "description": "Total floor area in sq meters",
+      "schema": "dtmi:digitaltwins:retail:SpaceArea;1"
+    },
+    {
+      "@type": "Property",
+      "name": "numberOfFloors",
+      "displayName": "Number of floors",
+      "description": "Total number of floors",
+      "schema": "integer"
+    },
+    {
+      "@type": "Component",
+      "name": "maxOccupancy",
+      "displayName": "Maximum Occupancy",
+      "schema": "dtmi:digitaltwins:retail:SpaceCapacity;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "locatedIn",
+      "description": "Defines the relationship where this store is located in."
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "description": "Defines the relationship of the floor in the store. Inverse of isPartOf",
+      "target": "dtmi:digitaltwins:retail:Floor;1"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Address;1",
+  "@type": "Interface",
+  "displayName": "Address",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "locationName",
+      "displayName": "Location Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "addressLine1",
+      "displayName": "Address Line 1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "addressLine2",
+      "displayName": "Address Line 2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "city",
+      "displayName": "City",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "state",
+      "displayName": "State",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "zipcode",
+      "displayName": "Zip Code",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "latitude",
+      "displayName": "Latitude",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "longtitude",
+      "displayName": "Longtitude",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "globalLocationNumber",
+      "displayName": "Global Location Number",
+      "description": "Global Location Number (GLN) is part of GS1 standards to identify a physical location",
+      "schema": "float"
+    }
+  ]
+}

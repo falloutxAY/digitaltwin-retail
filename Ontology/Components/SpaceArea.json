@@ -1,0 +1,15 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:SpaceArea;1",
+  "@type": "Interface",
+  "displayName": "Space Area",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "floorArea",
+      "displayName": "Total Floor Area",
+      "description": "Total floor area in sq meters",
+      "schema": "integer"
+    }
+  ]
+}

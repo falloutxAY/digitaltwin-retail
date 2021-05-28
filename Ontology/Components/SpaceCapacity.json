@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:SpaceCapacity;1",
+  "@type": "Interface",
+  "displayName": "Space Capacity",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "maxOccupancy",
+      "displayName":"Maximum Occupancy",
+      "writable": true,
+      "schema": "integer",
+      "comment": "Building Code Maximum Occupancy"
+    }
+  ]
+}
