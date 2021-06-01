@@ -3,7 +3,7 @@
   "@id": "dtmi:digitaltwins:retail:VideoCamera;1",
   "@type": "Interface",
   "displayName": "Video Camera",
-  "extends": "dtmi:digitaltwins:rec_3_3:core:Asset;1",
+  "extends": "dtmi:digitaltwins:retail:Asset;1",
   "contents": [
     {
       "@type": "Property",

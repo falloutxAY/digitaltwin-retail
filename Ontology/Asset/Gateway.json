@@ -3,5 +3,5 @@
   "@id": "dtmi:digitaltwins:retail:Gateway;1",
   "@type": "Interface",
   "displayName": "Gateway",
-  "extends": "dtmi:digitaltwins:rec_3_3:core:Asset;1"
+  "extends": "dtmi:digitaltwins:retail:Asset;1"
 }

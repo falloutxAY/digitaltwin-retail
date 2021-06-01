@@ -39,13 +39,7 @@
     },
     {
       "@type": "Relationship",
-      "name": "locatedIn",
-      "description": "Defines the relationship where this endcap is located in a display area.",
-      "comment": "Keeping it generic."
-    },
-    {
-      "@type": "Relationship",
-      "name": "containsProducts",
+      "name": "contains",
       "description": "Defines the products in this section",
       "target": "dtmi:digitaltwins:retail:ProductQuantity;1"
     }

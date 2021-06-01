@@ -1,6 +1,7 @@
 {
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:digitaltwins:retail:Region;1",
+    "extends": "dtmi:digitaltwins:retail:Geography;1",
     "@type": "Interface",
     "displayName": "Region",
     "description": "Region/State/Province.",
@@ -17,18 +18,6 @@
         "displayName": "Subdivision Code",
         "description": "Follows ISO 3166-2",
         "schema": "string"
-      },
-      {
-        "@type": "Relationship",
-        "name": "isPartOf",
-        "description": "Defines the relationship of the region being part of the country",
-        "target": "dtmi:digitaltwins:retail:Country;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "contains",
-        "description": "Defines the relationship of city contained in the region",
-        "target": "dtmi:digitaltwins:retail:City;1"
       }
     ]
   }

@@ -29,6 +29,11 @@
       "name": "isPartOf",
       "description": "Defines the relationship where the area is part of a space",
       "target": "dtmi:digitaltwins:retail:Floor;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "description": "An asset or fixture is contained in this area"
     }
   ]
 }

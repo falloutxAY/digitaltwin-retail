@@ -27,15 +27,20 @@
     },
     {
       "@type": "Relationship",
-      "name": "isPartOf",
-      "description": "Defines the relationship where this store is located in a display area.",
-      "target": "dtmi:digitaltwins:retail:AreaDisplay;1"
+      "name": "IsLocatedIn",
+      "description": "Defines the relationship where this store is located in an area.",
+      "target": "dtmi:digitaltwins:retail:Area;1"
     },
     {
       "@type": "Relationship",
-      "name": "containis",
-      "description": "Defines the relationship where aisle has endcap",
-      "target": "dtmi:digitaltwins:retail:endcap;1"
+      "name": "contains",
+      "description": "Defines the relationship where aisle has endcap"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasPart",
+      "description": "Defines the display section ",
+      "target": "dtmi:digitaltwins:retail:DisplaySection;1"
     }
   ]
 }

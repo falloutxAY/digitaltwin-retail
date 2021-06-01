@@ -20,15 +20,20 @@
     },
     {
       "@type": "Relationship",
-      "name": "isPartOf",
-      "description": "Defines the relationship where this store is located in an aisle.",
-      "target": "dtmi:digitaltwins:retail:Aisle;1"
+      "name": "isContainedIn",
+      "description": "Defines the relationship where this endcap is contained in an aisle."
     },
     {
       "@type": "Relationship",
-      "name": "locatedIn",
-      "description": "Defines the relationship where this endcap is located in a display area.",
-      "comment": "Keeping it generic."
+      "name": "IsLocatedIn",
+      "description": "Defines the relationship where this store is located in an area.",
+      "target": "dtmi:digitaltwins:retail:Area;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasPart",
+      "description": "Defines the display section ",
+      "target": "dtmi:digitaltwins:retail:DisplaySection;1"
     }
   ]
 }

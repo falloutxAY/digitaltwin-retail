@@ -1,6 +1,7 @@
 {
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:digitaltwins:retail:Country;1",
+  "extends": "dtmi:digitaltwins:retail:Geography;1",
   "@type": "Interface",
   "displayName": "Country",
   "description": "Country names. Follow ISO 3166-1 conventions",
@@ -25,12 +26,6 @@
       "@type": "Property",
       "name": "numericCode",
       "schema": "integer"
-    },
-    {
-      "@type": "Relationship",
-      "name": "contains",
-      "description": "Defines the relationship of regions contained in the country",
-      "target": "dtmi:digitaltwins:retail:Region;1"
     }
   ]
 }

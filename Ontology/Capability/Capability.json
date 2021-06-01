@@ -1,43 +1,31 @@
 {
-  "@id": "dtmi:digitaltwins:rec_3_3:core:Capability;1",
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Capability;1",
   "@type": "Interface",
+  "description": "A Capability indicates the capacity of an entity, be it a Space, an Asset, or a Device, to produce or ingest data. This is roughly equivalent to the established Brick Schema and generic BMS term \"point\". Specific subclasses specialize this behaviour: Sensor entities harvest data from the real world, Actuator entities accept commands from a digital twin platform, and Parameter entities configure some capability or system.",
+  "displayName": "Capability",
   "contents": [
     {
       "@type": "Property",
-      "name": "phenomenon",
-      "schema": "string",
-      "description": {
-        "en": "The phenomenon that a capability measures or interacts with; e.g., a TemperatureSensor can measure air temperature or water temperature, a Flow Demand Setpoint can be configured to control steam demand or chilled water demand, etc."
-      },
-      "displayName": {
-        "en": "substance"
-      }
+      "name": "typeOfCapability",
+      "displayName": "Capability",
+      "schema": "string"
     },
     {
       "@type": "Relationship",
-      "description": {
-        "en": "The coverage or impact area of a given Asset or Sensor/Actuator. For example: an air-treatment unit might serve several Rooms or a full Building. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: servedBy"
-      },
-      "displayName": {
-        "en": "serves"
-      },
+      "description": "The coverage or impact area of a given Asset or Sensor/Actuator. For example: an air-treatment unit might serve several Rooms or a full Building. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: servedBy",
+      "displayName": "serves",
       "name": "serves"
     },
     {
       "@type": "Relationship",
-      "description": {
-        "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability. Inverse of: hasCapability"
-      },
-      "displayName": {
-        "en": "is capabilty of"
-      },
-      "name": "isCapabilityOf"
+      "description": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability. Inverse of: hasCapability",
+      "displayName": "Is the capabilty of",
+      "name": "isTheCapabilityOf"
     },
     {
       "@type": "Property",
-      "displayName": {
-        "en": "name"
-      },
+      "displayName": "Name",
       "name": "name",
       "schema": "string",
       "writable": true
@@ -47,30 +35,26 @@
       "description": {
         "en": "The capability position relative to the system or space that it interacts with. E.g., a water temperature sensor can be positioned on the supply or return flow, air humidity can be measured entering or leaving a system, etc."
       },
-      "displayName": {
-        "en": "position"
-      },
+      "displayName": "Position",
       "name": "position",
       "schema": "string"
     },
     {
       "@type": "Property",
-      "description": {
-        "en": "Time when a core:Capability's value was last updated (see core:lastValue)."
-      },
-      "displayName": {
-        "en": "last value time"
-      },
+      "description": "Last value",
+      "displayName": "last value ",
+      "comment": "!! How to do this better?",
+      "name": "lastValue",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": "Time when a core:Capability's value was last updated (see lastValue).",
+      "displayName": "last value time",
       "name": "lastValueTime",
       "schema": "dateTime",
       "writable": true
     }
-  ],
-  "description": {
-    "en": "A Capability indicates the capacity of an entity, be it a Space, an Asset, or a Device, to produce or ingest data. This is roughly equivalent to the established Brick Schema and generic BMS term \"point\". Specific subclasses specialize this behaviour: Sensor entities harvest data from the real world, Actuator entities accept commands from a digital twin platform, and Parameter entities configure some capability or system."
-  },
-  "displayName": {
-    "en": "Capability"
-  },
-  "@context": "dtmi:dtdl:context;2"
+  ]
 }

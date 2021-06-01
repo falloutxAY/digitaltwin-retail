@@ -33,7 +33,7 @@
     },
     {
       "@type": "Relationship",
-      "name": "contains",
+      "name": "hasPart",
       "description": "Defines the areas which are located in the floor",
       "target": "dtmi:digitaltwins:retail:Area;1"
     }

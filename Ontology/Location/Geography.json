@@ -1,0 +1,32 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:retail:Geography;1",
+  "@type": "Interface",
+  "displayName": "Geography",
+  "description": "A country, city, region. This higher level grouping allows replationsships",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "geographyName",
+      "displayName": "Name of geography",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "description": "Inverse of hasPart. Defines a sub class being in the parent class. E.g. City isPartOfC",
+      "target": "dtmi:digitaltwins:retail:Geography;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasPart",
+      "description": "Inverse of isPartOf. Defines a super-entity relation",
+      "target": "dtmi:digitaltwins:retail:Geography;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "description": "Contains store etc"
+    }
+  ]
+}

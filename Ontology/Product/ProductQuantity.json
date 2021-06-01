@@ -4,7 +4,7 @@
   "extends":"dtmi:digitaltwins:retail:Product;1",
   "@type": "Interface",
   "displayName": "Product Quantity",
-  "description": "Product Quantity in an space",
+  "description": "Product Quantity in a space",
   "contents": [
     {
       "@type": "Property",
@@ -15,9 +15,9 @@
     },
     {
       "@type": "Relationship",
-      "name": "locatedIn",
+      "name": "isContainedIn",
       "description": "Defines the relationship where this endcap is located in a display area.",
-      "comment": "Keeping it generic."
+      "comment": "Keeping it generic as it can be in bins etc."
     }
   ]
 }

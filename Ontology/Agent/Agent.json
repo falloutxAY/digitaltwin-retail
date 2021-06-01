@@ -1,12 +1,11 @@
 {
-  "@id": "dtmi:digitaltwins:rec_3_3:core:Agent;1",
+  "@id": "dtmi:digitaltwins:retail:Agent;1",
   "@type": "Interface",
+  "displayName": "Agent",
+  "description": "The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, Company, Department...) to be anchored in one joint place, on the Agent class.",
   "contents": [
     {
       "@type": "Property",
-      "displayName": {
-        "en": "name"
-      },
       "name": "name",
       "schema": "string",
       "writable": true
@@ -22,11 +21,5 @@
       "schema": "string"
     }
   ],
-  "description": {
-    "en": "The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, Company, Department...) to be anchored in one joint place, on the Agent class."
-  },
-  "displayName": {
-    "en": "Agent"
-  },
   "@context": "dtmi:dtdl:context;2"
 }

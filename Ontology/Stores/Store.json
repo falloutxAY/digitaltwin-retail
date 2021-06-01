@@ -40,13 +40,13 @@
     },
     {
       "@type": "Relationship",
-      "name": "locatedIn",
+      "name": "isLocatedIn",
       "description": "Defines the relationship where this store is located in a geographic region.",
-      "comment": "Can set a target on an abstracted geographical interface"
+      "target": "dtmi:digitaltwins:retail:Geography;1"
     },
     {
       "@type": "Relationship",
-      "name": "contains",
+      "name": "hasPart",
       "description": "Defines the relationship of the floor in the store. Inverse of isPartOf",
       "target": "dtmi:digitaltwins:retail:Floor;1"
     }
