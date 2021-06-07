@@ -5,7 +5,7 @@ This is an example of how to model a retail store in DTDL.
 # Structure
 - Ontology: DTDL mode
 - Overview: Explaination of the modelling
-- Sample: Example instance
+![Retail ADT model](Overview/RetailModelExample.png)
 
 # References
 
